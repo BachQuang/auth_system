@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%7@1ak-5p8e@rfkise&rs+olhu4*&^*3#8+418g%(m)hou@qzw'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -76,15 +76,15 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'auth_system',
         'USER': 'postgres',
-        'PASSWORD': 'password123',
-        'HOST': 'localhost'
+        'PASSWORD': '',
+        'HOST': ''
     }
 }
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'bachquangtran98@gmail.com'
-EMAIL_HOST_PASSWORD = 'gbbgkcvjlxwayszu'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 
 
@@ -177,8 +177,8 @@ DJOSER = {
     }
 }
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '109570213407-a20vnkjpsq7kqmeinbjcef2gs8mfsv15.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'pLgJtteHz3FHWJs_26drJbVC'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = ''
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = ''
 SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = ['openid', 'https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/userinfo.profile']
 SOCIAL_AUTH_GOOGLE_OAUTH2_EXTRA_DATA = ['first_name', 'last_name']
 AUTH_USER_MODEL = 'accounts.UserAccount'
